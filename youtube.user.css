@@ -1,0 +1,26 @@
+/* ==UserStyle==
+@name Youtube fix
+@namespace Ayato-san
+@version 1.0.0
+@description Fix youtube issue
+@author Ayato-san
+@homepageURL https://github.com/Ayato-san/stylus/tree/main
+@updateURL https://raw.githubusercontent.com/Ayato-san/stylus/refs/heads/main/youtube.user.css
+@license MIT
+@preprocessor stylus
+==/UserStyle== */
+@-moz-document domain("youtube.com") {
+  :root {
+      --yt-frosted-glass-mobile: rgba(255, 255, 255, 0.7);
+      --yt-frosted-glass-desktop: rgba(255, 255, 255, 0.7);
+  }
+  #frosted-glass.with-chipbar.ytd-app {
+      height: 56px;
+  }
+
+  html[dark],
+  [dark] {
+      --yt-frosted-glass-mobile: rgba(36, 39, 58, 0.7);
+      --yt-frosted-glass-desktop: rgba(36, 39, 58, 0.7);
+  }
+}
