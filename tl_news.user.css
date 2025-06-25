@@ -4,10 +4,9 @@
 @version 1.0.0
 @description Print fix for throne and liberty AGS and KR news
 @author Ayato-san
-@homepageURL https://github.com/Ayato-san/stylus/tree/master/
-https://github.com/Ayato-san/tooling-configs/blob/2.x/.gitignore
-@updateURL https://github.com/Ayato-san/stylus/raw/master/tl_news.user.css
-@license GPL-3.0-or-later
+@homepageURL https://github.com/Ayato-san/stylus/tree/main
+@updateURL https://github.com/Ayato-san/stylus/raw/refs/heads/main/tl_news.user.css
+@license MIT
 @preprocessor stylus
 ==/UserStyle== */
 @-moz-document url-prefix("https://tl.plaync.com/ko-kr/board/notice/view") {
