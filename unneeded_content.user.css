@@ -1,0 +1,38 @@
+/* ==UserStyle==
+@name Unneeded content blocking
+@namespace Ayato-san
+@version 1.0.0
+@description blocks unneeded content
+@author Ayato-san
+@homepageURL https://github.com/Ayato-san/stylus/tree/main
+@updateURL https://raw.githubusercontent.com/Ayato-san/stylus/refs/heads/main/unneeded_content.user.css
+@license MIT
+@preprocessor stylus
+==/UserStyle== */
+@-moz-document domain("youtube.com") {
+  ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope,
+  ytd-reel-shelf-renderer.ytd-item-section-renderer.style-scope,
+  ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(3),
+  ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(4),
+  #scroll-container > .yt-chip-cloud-renderer.style-scope,
+  #header > .ytd-rich-grid-renderer.style-scope,
+  ytd-guide-section-renderer:first-child > div > ytd-guide-entry-renderer:nth-child(2),
+  ytd-reel-shelf-renderer.ytd-watch-next-secondary-results-renderer.style-scope {
+    display: none;
+  }
+}
+
+@-moz-document domain("twitch.tv") {
+  .Layout-sc-1xcs6mc-0.hTjsXl.front-page-carousel[data-a-target="front-page-carousel"],
+  .hKEeil.Layout-sc-1xcs6mc-0,
+  .navigation-link,
+  .jNQxNh.Layout-sc-1xcs6mc-0 {
+    display: none;
+  }
+}
+
+@-moz-document domain("tl.plaync.com") {
+  div.nc-banner.is-show[data-type=toast] {
+    display: none;
+  }
+}
