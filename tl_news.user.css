@@ -1,0 +1,69 @@
+/* ==UserStyle==
+@name 「Throne and Liberty News」
+@namespace Ayato-san
+@version 1.0.0
+@description Print fix for throne and liberty AGS and KR news
+@author Ayato-san
+@homepageURL https://github.com/Ayato-san/stylus/tree/master/
+https://github.com/Ayato-san/tooling-configs/blob/2.x/.gitignore
+@updateURL https://github.com/Ayato-san/stylus/raw/master/tl_news.user.css
+@license GPL-3.0-or-later
+@preprocessor stylus
+==/UserStyle== */
+@-moz-document url-prefix("https://tl.plaync.com/ko-kr/board/notice/view") {
+    @media print {
+        :is(h1, h2, h3, h4, h5, h6, p, span) {
+            font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !important;
+        }
+        .wrap-header,
+        #nc-cnb {
+            display: none
+        }
+    }
+
+    #footer,
+    .view-bottom,
+    .section-opinion,
+    .util-btn-wrap,
+    .board-prev-next-article {
+        display: none
+    }
+
+    .view-count {
+        visibility: hidden
+    }
+}
+
+@-moz-document url-prefix("https://www.playthroneandliberty.com/fr-fr/news/articles"), url-prefix("https://www.playthroneandliberty.com/en-us/news/articles") {
+    .ags-l-site-header.js-stickyHeader,
+    .ags-NewsArticlePage-contentWrapper-articlePane-allNews,
+    .ags-NewsArticlePage-contentWrapper-articlePane-tag,
+    footer.ags-SiteFooter,
+    .ags-NewsArticlePage-recentArticles,
+    .ags-NewsArticlePage-contentWrapper-articlePane-share,
+    .ags-NewsArticlePage-contentWrapper-articlePane-adjacentArticleLinks,
+    .ags-MediaGalleryEmbed-container-gallery-box:not([data-videourl*="/"]) .ags-MediaGalleryEmbed-container-gallery-box-thumbnail::after,
+    .ags-MediaGalleryEmbed-container-gallery-box-thumbnail-play {
+        display: none
+    }
+
+    @media print {
+        .ags-ContentModule.ags-ContentModule--center.ags-ContentModule--heightSmall.ags-ContentModule--darkBackground.ags-NewsArticlePage-.js-ContentModule.animate-in {
+            display: none
+        }
+        body.ags-l-site main :is(h1, h2, h3, p, span) {
+            background: none !important;
+            /*font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';*/
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+            color: black !important;
+        }
+        body.ags-l-site main :is(h1, h2, h3) {
+            -webkit-text-fill-color: initial !important;
+        }
+        .ags-rich-text-li::before {
+            content: "•";
+            transform: none;
+        }
+    }
+}
