@@ -26,7 +26,9 @@
   .Layout-sc-1xcs6mc-0.hTjsXl.front-page-carousel[data-a-target="front-page-carousel"],
   .hKEeil.Layout-sc-1xcs6mc-0,
   .navigation-link,
-  .jNQxNh.Layout-sc-1xcs6mc-0 {
+  .jNQxNh.Layout-sc-1xcs6mc-0,
+  .top-nav__external-link,
+  .ScCoreButton-sc-ocjdkq-0.iPkwTD.ScButtonIcon-sc-9yap0r-0.dcNXJO[aria-label="Plus d'options"] {
     display: none;
   }
 }
