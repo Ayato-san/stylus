@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Unneeded content blocking
 @namespace Ayato-san
-@version 1.0.1
+@version 1.0.2
 @description blocks unneeded content
 @author Ayato-san
 @homepageURL https://github.com/Ayato-san/stylus/tree/main
@@ -28,7 +28,10 @@
   .navigation-link,
   .jNQxNh.Layout-sc-1xcs6mc-0,
   .top-nav__external-link,
-  .ScCoreButton-sc-ocjdkq-0.iPkwTD.ScButtonIcon-sc-9yap0r-0.dcNXJO[aria-label="Plus d'options"] {
+  .ScCoreButton-sc-ocjdkq-0.iPkwTD.ScButtonIcon-sc-9yap0r-0.dcNXJO[aria-label="Plus d'options"],
+  .side-nav-section:is([aria-label="Chaînes live"],[aria-label="Catégories recommandées"]),
+  #one-tap-store-id,
+  .front-page-carousel{
     display: none;
   }
 }
