@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Unneeded content blocking
 @namespace Ayato-san
-@version 1.0.2
+@version 1.0.3
 @description blocks unneeded content
 @author Ayato-san
 @homepageURL https://github.com/Ayato-san/stylus/tree/main
@@ -18,7 +18,7 @@
   #header > .ytd-rich-grid-renderer.style-scope,
   ytd-guide-section-renderer:first-child > div > ytd-guide-entry-renderer:nth-child(2),
   ytd-reel-shelf-renderer.ytd-watch-next-secondary-results-renderer.style-scope {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -32,12 +32,12 @@
   .side-nav-section:is([aria-label="Chaînes live"],[aria-label="Catégories recommandées"]),
   #one-tap-store-id,
   .front-page-carousel{
-    display: none;
+    display: none !important;
   }
 }
 
 @-moz-document domain("tl.plaync.com") {
   div.nc-banner.is-show[data-type=toast] {
-    display: none;
+    display: none !important;
   }
 }
