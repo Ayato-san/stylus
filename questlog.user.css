@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Questlog screenshot
 @namespace Ayato-san
-@version 1.0.0
+@version 1.0.1
 @description Print fix for Questlog.gg screenshot
 @author Ayato-san
 @homepageURL https://github.com/Ayato-san/stylus/tree/main
@@ -10,14 +10,12 @@
 @preprocessor stylus
 ==/UserStyle== */
 @-moz-document url-prefix("https://questlog.gg/throne-and-liberty/en/character-builder/"), url-prefix("https://questlog.gg/throne-and-liberty/fr/character-builder/"), url-prefix("https://questlog.gg/throne-and-liberty/en-nc/character-builder/") {
-  :is([data-v-2638b0eb],
-  .grid.grid-cols-3.gap-1\.5.lg\:grid-cols-2 > .grid.grid-cols-2,
+  :is([data-v-ada74a8f],
   .inline-flex.cursor-pointer.items-center.justify-center.rounded.font-medium.transition.hover\:brightness-125.bg-light.border-light.border.text-default.h-\[34px\].min-w-8.text-sm.px-3.aspect-square.\!px-0,
-  [src="https://cdn.questlog.gg/throne-and-liberty/common/ui/Tex_Pol_Circle_Slot_Hover.webp"],
   .absolute.bottom-6.left-1\/2.flex.-translate-x-1\/2.gap-0\.5,
   .absolute.-bottom-2.left-1\/2.flex.size-10.-translate-x-1\/2.items-center.justify-center,
-  .absolute.left-1\/2.top-20.z-10.flex.size-6.-translate-x-1\/2.rounded.bg-default.flex-center.hover\:bg-light) {
-      display: none;
+  .block.h-full.gap-3.overflow-y-auto.px-2.pb-14.lg\:flex.lg\:px-0.lg\:pb-0 > :is(:nth-child(3),:nth-child(4))) {
+      display: none !important;
   }
 
   .flex.w-full.flex-none.flex-col.gap-2.lg\:w-64 {
@@ -25,6 +23,6 @@
   }
 
   [class*="glow-grade-"] {
-      box-shadow: none;
+      box-shadow: none !important;
   }
 }
