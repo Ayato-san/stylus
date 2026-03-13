@@ -17,7 +17,8 @@
   #header > .ytd-rich-grid-renderer.style-scope,
   #footer.style-scope.ytd-guide-renderer,
   ytd-guide-section-renderer:first-child > div > ytd-guide-entry-renderer:nth-child(2),
-  ytd-reel-shelf-renderer.ytd-watch-next-secondary-results-renderer.style-scope {
+  ytd-reel-shelf-renderer.ytd-watch-next-secondary-results-renderer.style-scope,
+  #guide-renderer > #sections.ytd-guide-renderer > :nth-child(3) ytd-guide-downloads-entry-renderer {
     display: none !important;
   }
 }
