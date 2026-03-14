@@ -25,6 +25,7 @@
   ytd-badge-supported-renderer.style-scope.ytd-watch-metadata,
   #sponsor-button.ytd-video-owner-renderer,
   #analytics-button.ytd-video-owner-renderer,
+  .yt-content-metadata-view-model__metadata-row.yt-content-metadata-view-model__metadata-row--metadata-row-wrap,
   #guide-renderer > #sections.ytd-guide-renderer > :nth-child(3) ytd-guide-downloads-entry-renderer {
     display: none !important;
   }
