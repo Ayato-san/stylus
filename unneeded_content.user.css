@@ -18,6 +18,13 @@
   #footer.style-scope.ytd-guide-renderer,
   ytd-guide-section-renderer:first-child > div > ytd-guide-entry-renderer:nth-child(2),
   ytd-reel-shelf-renderer.ytd-watch-next-secondary-results-renderer.style-scope,
+  #voice-search-button.ytd-masthead,
+  ytd-notification-topbar-button-renderer.style-scope.ytd-masthead,
+  #flexible-item-buttons.ytd-menu-renderer > :nth-child(2),
+  #flexible-item-buttons ~ #button-shape,
+  ytd-badge-supported-renderer.style-scope.ytd-watch-metadata,
+  #sponsor-button.ytd-video-owner-renderer,
+  #analytics-button.ytd-video-owner-renderer,
   #guide-renderer > #sections.ytd-guide-renderer > :nth-child(3) ytd-guide-downloads-entry-renderer {
     display: none !important;
   }
