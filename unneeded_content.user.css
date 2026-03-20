@@ -21,6 +21,7 @@
   #voice-search-button.ytd-masthead,
   ytd-notification-topbar-button-renderer.style-scope.ytd-masthead,
   #flexible-item-buttons.ytd-menu-renderer > :nth-child(1),
+  #flexible-item-buttons.ytd-menu-renderer > :nth-child(3),
   #flexible-item-buttons ~ #button-shape,
   ytd-badge-supported-renderer.style-scope.ytd-watch-metadata,
   #sponsor-button.ytd-video-owner-renderer,
