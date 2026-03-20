@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Unneeded content blocking
 @namespace Ayato-san
-@version 1.0.6
+@version 1.1.0
 @description blocks unneeded content
 @author Ayato-san
 @homepageURL https://github.com/Ayato-san/stylus/tree/main
@@ -20,7 +20,7 @@
     ytd-reel-shelf-renderer.ytd-watch-next-secondary-results-renderer.style-scope,
     #voice-search-button.ytd-masthead,
     ytd-notification-topbar-button-renderer.style-scope.ytd-masthead,
-    #flexible-item-buttons.ytd-menu-renderer > :nth-child(2),
+    #flexible-item-buttons.ytd-menu-renderer > :has(button-view-model > :not(button[aria-label="Enregistrer dans une playlist"])),
     #flexible-item-buttons ~ #button-shape,
     ytd-badge-supported-renderer.style-scope.ytd-watch-metadata,
     #sponsor-button.ytd-video-owner-renderer,
