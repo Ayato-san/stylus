@@ -10,46 +10,44 @@
 @preprocessor stylus
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-  ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope,
-  ytd-reel-shelf-renderer.ytd-item-section-renderer.style-scope,
-  ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(n+4),
-  #scroll-container > .yt-chip-cloud-renderer.style-scope,
-  #header > .ytd-rich-grid-renderer.style-scope,
-  #footer.style-scope.ytd-guide-renderer,
-  ytd-guide-section-renderer:first-child > div > ytd-guide-entry-renderer:nth-child(2),
-  ytd-reel-shelf-renderer.ytd-watch-next-secondary-results-renderer.style-scope,
-  #voice-search-button.ytd-masthead,
-  ytd-notification-topbar-button-renderer.style-scope.ytd-masthead,
-  #flexible-item-buttons.ytd-menu-renderer > :nth-child(1),
-  #flexible-item-buttons.ytd-menu-renderer > :nth-child(3),
-  #flexible-item-buttons ~ #button-shape,
-  ytd-badge-supported-renderer.style-scope.ytd-watch-metadata,
-  #sponsor-button.ytd-video-owner-renderer,
-  #analytics-button.ytd-video-owner-renderer,
-  .yt-content-metadata-view-model__metadata-row.yt-content-metadata-view-model__metadata-row--metadata-row-wrap,
-  #guide-renderer > #sections.ytd-guide-renderer > :nth-child(3) ytd-guide-downloads-entry-renderer {
-    display: none !important;
-  }
+    ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope,
+    ytd-reel-shelf-renderer.ytd-item-section-renderer.style-scope,
+    ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(n+4),
+    #scroll-container > .yt-chip-cloud-renderer.style-scope,
+    #header > .ytd-rich-grid-renderer.style-scope,
+    #footer.style-scope.ytd-guide-renderer,
+    ytd-guide-section-renderer:first-child > div > ytd-guide-entry-renderer:nth-child(2),
+    ytd-reel-shelf-renderer.ytd-watch-next-secondary-results-renderer.style-scope,
+    #voice-search-button.ytd-masthead,
+    ytd-notification-topbar-button-renderer.style-scope.ytd-masthead,
+    #flexible-item-buttons.ytd-menu-renderer > :nth-child(2),
+    #flexible-item-buttons ~ #button-shape,
+    ytd-badge-supported-renderer.style-scope.ytd-watch-metadata,
+    #sponsor-button.ytd-video-owner-renderer,
+    #analytics-button.ytd-video-owner-renderer,
+    .yt-content-metadata-view-model__metadata-row.yt-content-metadata-view-model__metadata-row--metadata-row-wrap,
+    #guide-renderer > #sections.ytd-guide-renderer > :nth-child(3) ytd-guide-downloads-entry-renderer {
+        display: none !important;
+    }
 }
 
 @-moz-document domain("twitch.tv") {
-  .Layout-sc-1xcs6mc-0.hTjsXl.front-page-carousel[data-a-target="front-page-carousel"],
-  .hKEeil.Layout-sc-1xcs6mc-0,
-  .navigation-link,
-  .jNQxNh.Layout-sc-1xcs6mc-0,
-  .top-nav__external-link,
-  .ScCoreButton-sc-ocjdkq-0.iPkwTD.ScButtonIcon-sc-9yap0r-0.dcNXJO[aria-label="Plus d'options"],
-  .side-nav-section:is([aria-label="Chaînes live"],[aria-label="Catégories recommandées"]),
-  #one-tap-store-id,
-  .front-page-carousel
-  .side-nav-show-more-toggle__button,
-  .Layout-sc-1xcs6mc-0.gEvECC{
-    display: none !important;
-  }
+    .Layout-sc-1xcs6mc-0.hTjsXl.front-page-carousel[data-a-target="front-page-carousel"],
+    .hKEeil.Layout-sc-1xcs6mc-0,
+    .navigation-link,
+    .jNQxNh.Layout-sc-1xcs6mc-0,
+    .top-nav__external-link,
+    .ScCoreButton-sc-ocjdkq-0.iPkwTD.ScButtonIcon-sc-9yap0r-0.dcNXJO[aria-label="Plus d'options"],
+    .side-nav-section:is([aria-label="Chaînes live"], [aria-label="Catégories recommandées"]),
+    #one-tap-store-id,
+    .front-page-carousel .side-nav-show-more-toggle__button,
+    .Layout-sc-1xcs6mc-0.gEvECC {
+        display: none !important;
+    }
 }
 
 @-moz-document domain("tl.plaync.com") {
-  div.nc-banner.is-show[data-type=toast] {
-    display: none !important;
-  }
+    div.nc-banner.is-show[data-type=toast] {
+        display: none !important;
+    }
 }
