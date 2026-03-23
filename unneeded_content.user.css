@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Unneeded content blocking
 @namespace Ayato-san
-@version 1.1.1
+@version 1.1.2
 @description blocks unneeded content
 @author Ayato-san
 @homepageURL https://github.com/Ayato-san/stylus/tree/main
@@ -56,7 +56,15 @@
     location-footer,
     [href="mystuff"],
     mat-icon[data-mat-icon-name="push_pin"],
-    .buttons-container.share.ng-star-inserted {
+    .buttons-container.share.ng-star-inserted,
+    hallucination-disclaimer.hallucination-disclaimer,
+    bard-mode-switcher,
+    .mat-mdc-menu-content > button[data-test-id="pin-button"],
+    .mat-mdc-menu-content > button[data-test-id="edit-button"] {
         display: none !important;
+    }
+
+    .ui-improvements-phase-1[_nghost-ng-c2964482646] .input-area-container[_ngcontent-ng-c2964482646] {
+        margin-bottom: 24px;
     }
 }
