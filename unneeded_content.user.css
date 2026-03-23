@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Unneeded content blocking
 @namespace Ayato-san
-@version 1.1.0
+@version 1.1.1
 @description blocks unneeded content
 @author Ayato-san
 @homepageURL https://github.com/Ayato-san/stylus/tree/main
@@ -48,6 +48,15 @@
 
 @-moz-document domain("tl.plaync.com") {
     div.nc-banner.is-show[data-type=toast] {
+        display: none !important;
+    }
+}
+
+@-moz-document domain("gemini.google.com") {
+    location-footer,
+    [href="mystuff"],
+    mat-icon[data-mat-icon-name="push_pin"],
+    .buttons-container.share.ng-star-inserted {
         display: none !important;
     }
 }
