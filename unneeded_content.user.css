@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Unneeded content blocking
 @namespace Ayato-san
-@version 1.1.3
+@version 1.1.4
 @description blocks unneeded content
 @author Ayato-san
 @homepageURL https://github.com/Ayato-san/stylus/tree/main
@@ -26,8 +26,13 @@
     #sponsor-button.ytd-video-owner-renderer,
     #analytics-button.ytd-video-owner-renderer,
     .yt-content-metadata-view-model__metadata-row.yt-content-metadata-view-model__metadata-row--metadata-row-wrap,
-    #guide-renderer > #sections.ytd-guide-renderer > :nth-child(3) ytd-guide-downloads-entry-renderer {
+    #guide-renderer > #sections.ytd-guide-renderer > :nth-child(3) ytd-guide-downloads-entry-renderer,
+    .ytContentMetadataViewModelMetadataRow.ytContentMetadataViewModelMetadataRowMetadataRowWrap:has(.ytContentMetadataViewModelBadge) {
         display: none !important;
+    }
+    
+    .ytLockupViewModelContentImage {
+        filter: grayscale(75%) contrast(75%);
     }
 }
 
