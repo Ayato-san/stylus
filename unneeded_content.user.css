@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Unneeded content blocking
 @namespace Ayato-san
-@version 1.1.5
+@version 1.1.6
 @description blocks unneeded content
 @author Ayato-san
 @homepageURL https://github.com/Ayato-san/stylus/tree/main
@@ -95,5 +95,11 @@
     div.sidebar-feature:nth-child(n+4),
     div.pageheader {
         display: none !important;
+    }
+
+    section > aside {
+      position: sticky;
+      top: 20px;
+      left: 0;
     }
 }
