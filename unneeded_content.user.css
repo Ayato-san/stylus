@@ -61,9 +61,11 @@
     location-footer,
     hallucination-disclaimer,
     zero-state-block-picker,
+    drive-uploader,
     [data-test-id="my-stuff-side-nav-entry-button"],
     .section-divider.ng-star-inserted,
-    .expandable-section-header {
+    .expandable-section-header,
+    .mat-mdc-list-item.mdc-list-item.mat-mdc-list-item-interactive.more-upload-button.mdc-list-item--with-leading-icon.lm-menu-item-theme.mat-mdc-list-item-single-line.mdc-list-item--with-one-line.ng-star-inserted {
         display: none !important;
     }
     
