@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Unneeded content blocking
 @namespace Ayato-san
-@version 1.1.6
+@version 1.1.7
 @description blocks unneeded content
 @author Ayato-san
 @homepageURL https://github.com/Ayato-san/stylus/tree/main
@@ -59,18 +59,60 @@
 
 @-moz-document domain("gemini.google.com") {
     location-footer,
-    [href="mystuff"],
-    mat-icon[data-mat-icon-name="push_pin"],
-    .buttons-container.share.ng-star-inserted,
-    hallucination-disclaimer.hallucination-disclaimer,
-    bard-mode-switcher,
-    .mat-mdc-menu-content > button[data-test-id="pin-button"],
-    .mat-mdc-menu-content > button[data-test-id="edit-button"] {
+    hallucination-disclaimer,
+    zero-state-block-picker,
+    [data-test-id="my-stuff-side-nav-entry-button"],
+    .section-divider.ng-star-inserted,
+    .expandable-section-header {
         display: none !important;
     }
-
-    .ui-improvements-phase-1[_nghost-ng-c2964482646] .input-area-container[_ngcontent-ng-c2964482646] {
-        margin-bottom: 24px;
+    
+    @media screen and (min-width: 960px) {
+      expandable-section::before {
+        height: 32px;
+        -webkit-padding-start: 14px;
+        -moz-padding-start: 14px;
+        padding-inline-start: 14px;
+      }
+    }
+    
+    expandable-section::before {
+      content: "Récentes";
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      cursor: pointer;
+      height: 44px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      color: var(--bard-color-lm-on-surface-variant);
+      -webkit-padding-start: var(--gem-sys-spacing--l);
+      -moz-padding-start: var(--gem-sys-spacing--l);
+      padding-inline-start: var(--gem-sys-spacing--l);
+      background: transparent;
+      border: none;
+      text-align: start;
+      width: 100%;
+      white-space: nowrap;
+      vertical-align: middle;
+      --gds-type-scale-default-rond: var(--gem-sys-typography-type-scale--body-s-font-rond);
+      font-family: Google Sans Flex,Google Sans,Helvetica Neue,sans-serif;
+      font-size: var(--gem-sys-typography-type-scale--body-s-font-size);
+      font-weight: var(--gem-sys-typography-type-scale--body-s-font-weight);
+      letter-spacing: var(--gem-sys-typography-type-scale--body-s-font-tracking);
+      line-height: var(--gem-sys-typography-type-scale--body-s-line-height);
+      --gds-type-scale-default-wdth: var(--gem-sys-typography-type-scale--body-s-font-width);
+      font-variation-settings: var(--gds-type-scale-default-wdth),var(--gds-type-scale-default-slnt),var(--gds-type-scale-default-rond);
+      cursor: auto;
     }
 }
 
