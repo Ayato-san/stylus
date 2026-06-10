@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Unneeded content blocking
 @namespace Ayato-san
-@version 1.1.7
+@version 1.1.8
 @description blocks unneeded content
 @author Ayato-san
 @homepageURL https://github.com/Ayato-san/stylus/tree/main
@@ -123,7 +123,7 @@
     [href="/i/grok"], [href="/i/connect_people"],
     div:has(> div > [aria-label="Abonnez‑vous à Premium"]),
     div:has(> nav[aria-label="Pied de page"]),
-    div:has(> div > div > div > div > [data-testid="GrokDrawerHeader"]),
+    #layers > div:first-child,
     div:has(> button[aria-label="Actions Grok"]),
     [aria-label="undefined éléments non lus"] {
         display: none !important;
