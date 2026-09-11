@@ -46,7 +46,13 @@
     .side-nav-section:is([aria-label="Chaînes live"], [aria-label="Catégories recommandées"]),
     #one-tap-store-id,
     .front-page-carousel .side-nav-show-more-toggle__button,
-    .Layout-sc-1xcs6mc-0.gEvECC {
+    .Layout-sc-1xcs6mc-0.gEvECC,
+    [data-a-target="front-page-carousel"],
+    .show-more__move-up,
+    .side-nav-show-more-toggle__button,
+    .top-nav__menu > div:nth-child(1) > :nth-child(n+3),
+    [data-a-target="side-nav-arrow"],
+    .side-nav__title {
         display: none !important;
     }
 }
