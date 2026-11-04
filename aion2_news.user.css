@@ -25,7 +25,10 @@ url-prefix("https://aion2.plaync.com/en-us/board/update/view") {
     .util-btn-wrap,
     .board-prev-next-article,
     .hfsutL,
-    .wrap-btn-top {
+    .wrap-btn-top,
+    [data-contents-type="text"]:has( + [data-area="목차"]),
+    [data-area="목차"],
+    [data-area="목차"] + [data-contents-type="text"] {
         display: none !important;
     }
 
