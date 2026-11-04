@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Aion 2 News
 @namespace Ayato-san
-@version 1.0.1
+@version 1.0.2
 @description Print fix for aion 2 AGS and KR news
 @author Ayato-san
 @homepageURL https://github.com/Ayato-san/stylus/tree/main
@@ -9,24 +9,36 @@
 @license MIT
 @preprocessor stylus
 ==/UserStyle== */
-@-moz-document url-prefix("https://aion2.plaync.com/en-us/eventon/board/event_notice/view"), url-prefix("https://aion2.plaync.com/en-us/board/notice/view"), url-prefix("https://aion2.plaync.com/en-us/board/update/view") {
-  :is(h1, h2, h3, h4, h5, h6, p, span) {
-      font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !important;
-  }
-  
-  #footer,
-  .wrap-header,
-  #nc-cnb,
-  .btn-theme,
-  .view-bottom,
-  .section-opinion,
-  .util-btn-wrap,
-  .board-prev-next-article,
-  .hfsutL {
-      display: none !important;
-  }
-  
-  .view-count {
-      visibility: hidden
-  }
+@-moz-document url-prefix("https://aion2.plaync.com/en-us/eventon/board/event_notice/view"),
+url-prefix("https://aion2.plaync.com/en-us/board/notice/view"),
+url-prefix("https://aion2.plaync.com/en-us/board/update/view") {
+    :is(h1, h2, h3, h4, h5, h6, p, span) {
+        font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !important;
+    }
+
+    #footer,
+    .wrap-header,
+    #nc-cnb,
+    .btn-theme,
+    .view-bottom,
+    .section-opinion,
+    .util-btn-wrap,
+    .board-prev-next-article,
+    .hfsutL,
+    .wrap-btn-top {
+        display: none !important;
+    }
+
+    .view-count {
+        visibility: hidden
+    }
+
+    #ncCommunityView {
+        max-width: 100% !important;
+    }
+
+    .wrap-contents {
+        max-width: 100vw !important;
+        width: calc(100vw - 80px);
+    }
 }
